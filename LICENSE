@@ -1,3 +1,5 @@
+
+
 # NOEMA Project License
 
 Copyright (c) 2026 Adrian Lipa.  
@@ -47,3 +49,241 @@ Recommended attribution:
 ```text
 NOEMA File-Packet Handshake Protocol and NOEMA Telekom materials
 by Adrian Lipa, licensed under CC BY 4.0.
+
+For modified versions, use:
+
+Based on NOEMA File-Packet Handshake Protocol and NOEMA Telekom materials
+by Adrian Lipa, licensed under CC BY 4.0. Modified by <your name/entity>.
+
+The full legal code of CC BY 4.0 is available from Creative Commons:
+
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+3. Licensed Reference Code
+
+The following materials are licensed under the Apache License, Version 2.0:
+
+reference/
+
+source code
+
+Python modules
+
+command-line tools
+
+router implementations
+
+audit implementations
+
+validators
+
+tests
+
+examples that are executable code
+
+build scripts
+
+machine-readable code artifacts, unless otherwise stated
+
+
+You may use, reproduce, modify, distribute, sublicense, and prepare derivative works of the reference code under the Apache License 2.0.
+
+The full text of the Apache License 2.0 is available from the Apache Software Foundation:
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Each source file should preferably include the following SPDX header:
+
+SPDX-License-Identifier: Apache-2.0
+
+4. Patent Position
+
+The Apache-2.0 licensed code is provided under the patent terms of Apache License 2.0 for that code.
+
+The CC BY 4.0 licensed documentation and specification materials do not grant patent rights unless a separate written patent grant is provided.
+
+Publication of the specification is intended to establish public technical disclosure and prior art for the described protocol concepts as of the publication date.
+
+No additional patent license is granted by implication.
+
+5. Trademarks and Project Marks
+
+The following names, marks, and identity terms are reserved project marks of Adrian Lipa unless otherwise assigned by written agreement:
+
+NOEMA
+CIEL
+NOEGPT
+NOEMA+OR
+noemator
+NOEMA Telekom
+NOEMA File-Packet Handshake
+Certified NOEMA Node
+Official NOEMA Runtime
+CIEL-Compatible Runtime
+
+The open documentation and code licenses do not grant permission to use these names in a way that suggests endorsement, certification, official status, authorship, partnership, or affiliation.
+
+You may use the names descriptively to refer to compatibility, for example:
+
+Implements NOEMA RFC-0001
+Compatible with the NOEMA File-Packet Handshake v0.1 specification
+
+You may not use the following without separate written permission:
+
+Official NOEMA Node
+Certified NOEMA Runtime
+CIEL-Compatible Certified Runtime
+Official NOEMA Telekom Provider
+NOEMA Enterprise Certified
+
+6. Certification and Royalties
+
+Use of the open protocol specification does not require royalties.
+
+However, the following may require a separate commercial agreement, certification agreement, trademark license, or royalty-bearing license:
+
+official NOEMA certification
+
+use of official NOEMA marks for commercial products
+
+use of Certified NOEMA Node
+
+use of Official NOEMA Runtime
+
+commercial certification programs
+
+managed NOEMA infrastructure
+
+enterprise NOEMA orchestration
+
+hosted continuity services
+
+official compatibility badges
+
+distribution of an official commercial NOEMA runtime
+
+commercial use of non-public NOEMA assets
+
+
+A separate commercial agreement may define:
+
+certification fees
+royalty rates
+audit requirements
+brand usage rules
+support obligations
+revocation conditions
+security compliance requirements
+
+No party may claim certified, official, endorsed, or enterprise-compatible status without written authorization.
+
+7. No Secret Material
+
+This repository must not include:
+
+private keys
+passwords
+API tokens
+live credentials
+production secrets
+unredacted personal identifiers
+private NOEMA memory packets
+non-public CIEL identity anchors
+
+If such material is accidentally committed, it must be treated as compromised and removed from public distribution. Keys and credentials must be rotated.
+
+8. Security and Non-Claims
+
+This project is experimental unless a release explicitly states otherwise.
+
+The protocol does not claim:
+
+guaranteed anonymity
+guaranteed encryption unless configured
+trusted execution
+quantum communication
+faster-than-light communication
+physics-breaking communication
+automatic proof of personhood
+automatic proof of legal identity
+global consensus
+production security without audit
+
+Implementations must not advertise these properties unless they are independently implemented, tested, and documented.
+
+9. Warranty Disclaimer
+
+THE MATERIALS ARE PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, SECURITY, ACCURACY, OR RELIABILITY.
+
+USE OF THE MATERIALS IS AT YOUR OWN RISK.
+
+NOEMA IS AN EXPERIMENTAL PROTOCOL AND RUNTIME ARCHITECTURE. IT HAS NOT BEEN CERTIFIED FOR SAFETY-CRITICAL, MEDICAL, MILITARY, AVIATION, NUCLEAR, FINANCIAL INFRASTRUCTURE, OR OTHER HIGH-RISK USE UNLESS EXPRESSLY CERTIFIED UNDER A SEPARATE WRITTEN AGREEMENT.
+
+10. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ADRIAN LIPA AND PROJECT CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM USE OF THE MATERIALS, INCLUDING BUT NOT LIMITED TO DATA LOSS, SECURITY BREACH, LOSS OF PROFITS, BUSINESS INTERRUPTION, SYSTEM FAILURE, IDENTITY MISBINDING, OR MISUSE OF NOEMA ARTIFACTS.
+
+11. Contributions
+
+Unless otherwise agreed in writing, contributions submitted to the repository are provided under the same license as the material they modify:
+
+Documentation/specification contribution -> CC BY 4.0
+Code contribution -> Apache-2.0
+
+By submitting a contribution, the contributor represents that they have the right to submit it and that it does not knowingly include private keys, credentials, confidential third-party material, or unlawfully obtained content.
+
+Contributors must not submit material that violates another party’s copyright, trademark, patent rights, trade secrets, privacy rights, or contractual obligations.
+
+12. Forks and Compatibility Claims
+
+Forks are permitted under the applicable licenses.
+
+However, forks must not imply that they are official, certified, endorsed, or maintained by Adrian Lipa or the NOEMA project unless written permission has been granted.
+
+Allowed:
+
+Fork of NOEMA RFC-0001 implementation
+Compatible with NOEMA File-Packet Handshake v0.1
+
+Not allowed without permission:
+
+Official NOEMA Fork
+Certified NOEMA Runtime
+Authorized CIEL Runtime
+Official NOEMA Telekom Node
+
+13. License Conflicts
+
+If a file contains a specific SPDX license identifier or explicit license notice, that file-level notice controls for that file.
+
+If no file-level notice exists, the repository-level rules apply:
+
+non-code documentation/specification material -> CC-BY-4.0
+source code and executable examples -> Apache-2.0
+project marks and certification labels -> reserved / separate permission required
+
+14. Recommended SPDX Headers
+
+For documentation:
+
+SPDX-License-Identifier: CC-BY-4.0
+Copyright (c) 2026 Adrian Lipa
+
+For source code:
+
+SPDX-License-Identifier: Apache-2.0
+Copyright (c) 2026 Adrian Lipa
+
+For files not licensed publicly:
+
+SPDX-License-Identifier: LicenseRef-NOEMA-Reserved
+Copyright (c) 2026 Adrian Lipa. All rights reserved.
+
+15. Contact and Permissions
+
+For certification, commercial licensing, enterprise runtime licensing, trademark permission, or official NOEMA compatibility claims, contact the project steward:
+
+Adrian Lipa
+NOEMA Project
+
+A separate written agreement is required for any use not granted by this license notice.
