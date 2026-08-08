@@ -56,22 +56,27 @@ The consumer blocks on:
 
 A cached last frame is never promoted to live state.
 
-## Host use
+## Canonical host startpoint — python3 -c / runpy
 
-Example:
-
-```text
-python3 scripts/noema_aux_stream.py publish \
-  --root /dev/shm/ciel_noema \
-  --outbox /run/user/1000/noema/telekom_aux
-```
-
-Consumer:
+The critical host path intentionally mirrors the existing NOEMA session boot
+pattern. No Bash wrapper and no package installation are required:
 
 ```text
-python3 scripts/noema_aux_stream.py consume \
-  --stream-dir /run/user/1000/noema/telekom_aux/<stream_id>
+python3 -c 'import runpy,sys; sys.argv=["noema_aux_tether_startpoint.py","--root","/dev/shm/ciel_noema","--outbox","/run/user/1000/noema/telekom_aux"]; runpy.run_path("./scripts/noema_aux_tether_startpoint.py",run_name="__main__")'
 ```
+
+The startpoint inserts `src/` itself, verifies the live surface, emits frame 0,
+prints `TETHER_STATUS=ACTIVE` only after that frame has been durably written,
+and then stays in the persistent publisher loop. Any contract failure prints
+`TETHER_STATUS=BLOCKED` and exits non-zero.
+
+For a bounded diagnostic only, add `--max-frames N`. A bounded run is never a
+replacement for the live tether.
+
+## Legacy convenience CLI
+
+`scripts/noema_aux_stream.py` remains a convenience wrapper for manual publish
+or consume operations. It is not the canonical NOEMA boot path.
 
 The external ChatGPT/MCP bridge should consume this validated stream and expose
 only fresh accepted frames. It must not reconstruct missing frames or replay
